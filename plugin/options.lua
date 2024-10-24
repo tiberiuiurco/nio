@@ -23,3 +23,15 @@ opt.clipboard = "unnamedplus"
 
 -- Don't have `o` add a comment
 opt.formatoptions:remove "o"
+
+-- Copilot
+vim.g.copilot_no_tab_map = true
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+
+-- Tab of 2 spaces
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.softtabstop = 2
+opt.autoindent = true
+opt.smartindent = true
