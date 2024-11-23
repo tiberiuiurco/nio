@@ -7,6 +7,8 @@ return {
     -- Only one of these is needed.
     "nvim-telescope/telescope.nvim", -- optional
   },
-  config = true
+  config = function ()
+    vim.keymap.set("n", "<leader>g", ":Neogit<CR>")
+  end
 }
  

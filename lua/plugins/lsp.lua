@@ -1,5 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
 	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim"
+	"williamboman/mason-lspconfig.nvim",
+  "blueyed/smarty.vim"
 }

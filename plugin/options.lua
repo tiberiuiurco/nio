@@ -19,7 +19,9 @@ opt.splitright = true
 opt.signcolumn = "yes"
 opt.shada = { "'10", "<0", "s10", "h" }
 
-opt.clipboard = "unnamedplus"
+vim.opt.clipboard:append "unnamedplus"
+vim.opt.textwidth = 100
+vim.opt.termguicolors = true
 
 -- Don't have `o` add a comment
 opt.formatoptions:remove "o"
@@ -35,3 +37,9 @@ opt.expandtab = true
 opt.softtabstop = 2
 opt.autoindent = true
 opt.smartindent = true
+
+-- Set color column to 80
+opt.colorcolumn = "80,120"
+-- Color to yellow
+
+vim.opt.undofile = true
