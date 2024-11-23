@@ -3,6 +3,7 @@ vim.keymap.set("n", "gr", vim.lsp.buf.references)
 vim.keymap.set("n", "gD", vim.lsp.buf.declaration)
 vim.keymap.set("n", "gT", vim.lsp.buf.type_definition)
 vim.keymap.set("n", "K", vim.lsp.buf.hover)
+vim.keymap.set("n", "ff", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<space>cr", vim.lsp.buf.rename)
 vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action)
