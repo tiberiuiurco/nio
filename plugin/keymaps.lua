@@ -51,3 +51,5 @@ set("n", "<M-k>", function()
     vim.cmd [[m .-2<CR>==]]
   end
 end)
+
+set("i", "jk", "<esc>", { noremap = true })
