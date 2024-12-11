@@ -18,6 +18,6 @@ require'lspconfig'.lua_ls.setup{}
 require'lspconfig'.ts_ls.setup{}
 require'lspconfig'.html.setup{}
 require'lspconfig'.clangd.setup{}
--- require'lspconfig'.phpactor.setup{}
-require'lspconfig'.intelephense.setup{}
+require'lspconfig'.phpactor.setup{}
+-- require'lspconfig'.intelephense.setup{}
 require'lspconfig'.smarty_ls.setup{}

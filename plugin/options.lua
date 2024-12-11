@@ -35,8 +35,8 @@ opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 opt.softtabstop = 2
-opt.autoindent = true
-opt.smartindent = true
+-- opt.autoindent = true
+-- opt.smartindent = true
 
 -- Set color column to 80
 opt.colorcolumn = "80,120"
