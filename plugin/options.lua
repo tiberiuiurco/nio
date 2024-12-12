@@ -39,7 +39,7 @@ opt.softtabstop = 2
 -- opt.smartindent = true
 
 -- Set color column to 80
-opt.colorcolumn = "80,120"
+opt.colorcolumn = "80"
 -- Color to yellow
 
 vim.opt.undofile = true
