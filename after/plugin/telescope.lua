@@ -4,3 +4,5 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 vim.keymap.set('n', '<leader>fr', builtin.resume, { desc = 'Telescope resume last search' })
+vim.keymap.set('n', '<leader>fs', builtin.grep_string, { desc = 'Telescope grep cursor string' })
+vim.keymap.set('n', '<leader>fd', builtin.diagnostics, { desc = 'Telescope diagnostics buffer' })

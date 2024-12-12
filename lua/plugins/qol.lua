@@ -8,5 +8,6 @@ return {
     ---@module "ibl"
     ---@type ibl.config
     opts = {},
-  }
+  },
+  "tpope/vim-unimpaired"
 }

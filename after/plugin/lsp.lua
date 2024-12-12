@@ -8,6 +8,9 @@ vim.keymap.set("n", "ff", vim.lsp.buf.format)
 vim.keymap.set("n", "<space>cr", vim.lsp.buf.rename)
 vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action)
 
+-- Quickfix
+vim.keymap.set("n", "<space>qq", "<CMD>ccl<CR>")
+
 require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = {"cssls", "html", "grammarly", "rust_analyzer"}
@@ -18,6 +21,6 @@ require'lspconfig'.lua_ls.setup{}
 require'lspconfig'.ts_ls.setup{}
 require'lspconfig'.html.setup{}
 require'lspconfig'.clangd.setup{}
-require'lspconfig'.phpactor.setup{}
--- require'lspconfig'.intelephense.setup{}
+-- require'lspconfig'.phpactor.setup{}
+require'lspconfig'.intelephense.setup{}
 require'lspconfig'.smarty_ls.setup{}
