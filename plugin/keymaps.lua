@@ -7,6 +7,7 @@ set("n", "<c-l>", "<c-w><c-l>")
 set("n", "<c-h>", "<c-w><c-h>")
 
 set("n", "<leader>x", "<cmd>.lua<CR>", { desc = "Execute the current line" })
+set("v", "<leader>x", "<cmd>.lua<CR>", { desc = "Execute the current line" })
 set("n", "<leader><leader>x", "<cmd>source %<CR>", { desc = "Execute the current file" })
 
 -- Toggle hlsearch if it's on, otherwise just do "enter"
@@ -29,6 +30,8 @@ set("n", "<right>", "gt")
 -- the float when I navigate to the error - so I override them.
 set("n", "]d", vim.diagnostic.goto_next)
 set("n", "[d", vim.diagnostic.goto_prev)
+vim.keymap.set("n", "<M-j>", "<CMD>cprev<CR>")
+vim.keymap.set("n", "<M-k>", "<CMD>cnext<CR>")
 
 -- These mappings control the size of splits (height/width)
 set("n", "<M-,>", "<c-w>5<")
