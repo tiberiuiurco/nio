@@ -13,14 +13,30 @@ vim.keymap.set("n", "<space>qq", "<CMD>ccl<CR>")
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = {"cssls", "html", "grammarly", "rust_analyzer"}
+  ensure_installed = { "cssls", "html", "grammarly", "rust_analyzer" }
 })
 
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.lua_ls.setup{}
-require'lspconfig'.ts_ls.setup{}
-require'lspconfig'.html.setup{}
-require'lspconfig'.clangd.setup{}
+require 'lspconfig'.pyright.setup {}
+require 'lspconfig'.lua_ls.setup {}
+require 'lspconfig'.ts_ls.setup {}
+require 'lspconfig'.html.setup {}
+require 'lspconfig'.clangd.setup {}
 -- require'lspconfig'.phpactor.setup{}
-require'lspconfig'.intelephense.setup{}
-require'lspconfig'.smarty_ls.setup{}
+require 'lspconfig'.intelephense.setup {}
+require 'lspconfig'.smarty_ls.setup {}
+
+-- format on save
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+    if not client then return end
+    if client.supports_method('textDocument/formatting') then
+      vim.api.nvim_create_autocmd('BufWritePre', {
+        buffer = args.buf,
+        callback = function()
+          vim.lsp.buf.format({ bufnr = args.buf, id = client.id })
+        end
+      })
+    end
+  end
+})
