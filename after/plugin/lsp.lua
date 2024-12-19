@@ -22,7 +22,15 @@ require 'lspconfig'.ts_ls.setup {}
 require 'lspconfig'.html.setup {}
 require 'lspconfig'.clangd.setup {}
 -- require'lspconfig'.phpactor.setup{}
-require 'lspconfig'.intelephense.setup {}
+require 'lspconfig'.intelephense.setup({
+  settings = {
+    intelephense = {
+      environment = {
+        phpVersion = "8.4.0"
+      },
+    }
+  }
+})
 require 'lspconfig'.smarty_ls.setup {}
 
 -- format on save
