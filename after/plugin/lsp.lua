@@ -18,7 +18,7 @@ require("mason-lspconfig").setup({
 
 require 'lspconfig'.pyright.setup {}
 require 'lspconfig'.lua_ls.setup {}
-require 'lspconfig'.ts_ls.setup {}
+require 'lspconfig'.volar.setup {}
 require 'lspconfig'.html.setup {}
 require 'lspconfig'.clangd.setup {}
 -- require'lspconfig'.phpactor.setup{}
@@ -31,6 +31,7 @@ require 'lspconfig'.intelephense.setup({
     }
   }
 })
+require 'lspconfig'.ts_ls.setup {}
 require 'lspconfig'.smarty_ls.setup {}
 
 -- format on save
