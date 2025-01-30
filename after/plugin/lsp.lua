@@ -13,7 +13,7 @@ vim.keymap.set("n", "<space>qq", "<CMD>ccl<CR>")
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "cssls", "html", "grammarly", "rust_analyzer" }
+  ensure_installed = { "cssls", "html", "grammarly", "rust_analyzer", "lua_ls" }
 })
 
 require 'lspconfig'.pyright.setup {}
