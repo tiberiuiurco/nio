@@ -23,6 +23,8 @@ vim.opt.clipboard:append "unnamedplus"
 vim.opt.textwidth = 100
 vim.opt.termguicolors = true
 
+opt.cursorline = true
+
 -- Don't have `o` add a comment
 opt.formatoptions:remove "o"
 

@@ -9,5 +9,6 @@ return {
     ---@type ibl.config
     opts = {},
   },
-  "tpope/vim-unimpaired"
+  "tpope/vim-unimpaired",
+  "tpope/vim-abolish",
 }
