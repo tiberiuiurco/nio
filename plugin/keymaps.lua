@@ -56,3 +56,7 @@ set("n", "<M-k>", function()
 end)
 
 set("i", "jk", "<esc>", { noremap = true })
+
+-- default but improved
+set("n", "<c-d>", "<c-d>zz")
+set("n", "<c-u>", "<c-u>zz")
